@@ -36,6 +36,7 @@ def read_from_serial(serialName, baudRate):
     sys.stdout.write("Started reading on serial\n")
     sys.stdout.write("-"*60)
     sys.stdout.write("\n")
+    
     while True:
         sys.stdout.write(coin_acceptor.readline())
         sys.stdout.flush()

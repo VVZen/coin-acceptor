@@ -4,7 +4,9 @@ float current_credit = 0.0f;
 
 void setup() {
   Serial.begin(9600);
+  
   pinMode(COIN_PIN, INPUT_PULLUP);
+  
   attachInterrupt(digitalPinToInterrupt(COIN_PIN), coin_received, FALLING);
 
   Serial.println("Starting..");
